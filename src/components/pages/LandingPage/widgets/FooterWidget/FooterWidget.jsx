@@ -13,7 +13,10 @@ const FooterWidget = () => (
             The personal shows tracker for people who take their watchlist seriously.
           </p>
         </div>
-        <span className="footer-copy">© 2026 Showdex. All rights reserved.</span>
+        <span className="footer-copy">
+          © 2026 Showdex. All rights reserved.{' '}
+          <a href="/privacy.html" className="footer-privacy">Privacy Policy</a>
+        </span>
       </div>
     </div>
   </footer>
