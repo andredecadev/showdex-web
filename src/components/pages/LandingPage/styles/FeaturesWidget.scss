@@ -1,0 +1,169 @@
+@use 'tokens' as *;
+
+.features-section {
+  padding: 110px 24px 0;
+}
+
+.features-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.features-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 90px;
+}
+
+.features-eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: $coral;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.features-h2 {
+  font-family: $serif;
+  font-size: clamp(34px, 4.4vw, 54px);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  margin: 0;
+  color: $text;
+
+  span { color: $coral; }
+}
+
+.features-desc {
+  font-size: 17px;
+  line-height: 1.6;
+  color: $muted;
+  margin-top: 18px;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+// ─── Feature row ──────────────────────────────────────────────────
+.feature-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+
+  @media (max-width: 920px) {
+    grid-template-columns: 1fr;
+    gap: 36px;
+
+    & > div { order: unset !important; }
+  }
+}
+
+.feature-copy {
+  max-width: 440px;
+
+  @media (max-width: 920px) {
+    max-width: none;
+    margin: 0 auto;
+    text-align: center;
+
+    & > div:first-child {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.feature-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  margin-bottom: 20px;
+  background: $coral-soft;
+  color: $coral;
+  display: grid;
+  place-items: center;
+}
+
+.feature-eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: $coral;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.feature-h2 {
+  font-family: $serif;
+  font-size: clamp(30px, 3.4vw, 42px);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  margin: 0;
+  color: $text;
+}
+
+.feature-body {
+  font-family: $sans;
+  font-size: 16.5px;
+  line-height: 1.6;
+  color: $muted;
+  margin: 18px 0 0;
+}
+
+.feature-points {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature-point {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.feature-check {
+  width: 22px;
+  height: 22px;
+  border-radius: 99px;
+  flex-shrink: 0;
+  background: $coral-soft;
+  color: $coral;
+  display: grid;
+  place-items: center;
+}
+
+.feature-point-text {
+  font-size: 15px;
+  color: $text;
+}
+
+.feature-visual {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.feature-visual-inner {
+  position: relative;
+}
+
+.feature-glow {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  filter: blur(10px);
+}

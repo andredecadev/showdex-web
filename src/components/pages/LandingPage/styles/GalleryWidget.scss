@@ -1,0 +1,60 @@
+@use 'tokens' as *;
+
+.gallery-section {
+  padding: 130px 0 0;
+  overflow: hidden;
+}
+
+.gallery-header-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.gallery-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 56px;
+}
+
+.gallery-eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: $coral;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.gallery-h2 {
+  font-family: $serif;
+  font-size: clamp(34px, 4.4vw, 54px);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  margin: 0;
+  color: $text;
+
+  span { color: $coral; }
+}
+
+.gallery-rail {
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  padding: 12px 24px 40px;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery-item {
+  scroll-snap-align: center;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.gallery-label {
+  margin-top: 16px;
+  font-size: 13.5px;
+  color: $muted;
+  font-weight: 500;
+}

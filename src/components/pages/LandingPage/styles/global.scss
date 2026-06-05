@@ -1,0 +1,32 @@
+@use 'tokens' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap');
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $bg;
+  color: $text;
+  font-family: $sans;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gallery-rail {
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+}
+
+.cta-btn {
+  &:hover { transform: translateY(-2px); filter: brightness(1.06); }
+  &:active { transform: translateY(0); }
+}
+
+.nav-link {
+  &:hover { color: $text !important; }
+}

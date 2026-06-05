@@ -1,0 +1,57 @@
+@use 'tokens' as *;
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  transition: all 0.25s;
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  text-decoration: none;
+}
+
+.nav-brand-name {
+  font-family: $serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: $text;
+  letter-spacing: -0.02em;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  @media (max-width: 920px) {
+    display: none !important;
+  }
+}
+
+.nav-link {
+  font-family: $sans;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: $muted;
+  text-decoration: none;
+  transition: color 0.15s;
+}
