@@ -88,7 +88,7 @@
     margin 0.3s;
 
   .faq-item--open & {
-    max-height: 200px;
+    max-height: 640px;
     opacity: 1;
     margin-top: 12px;
   }
@@ -98,5 +98,15 @@
     line-height: 1.6;
     color: $muted;
     margin: 0;
+  }
+}
+
+.faq-link {
+  color: $faint;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: $text;
   }
 }

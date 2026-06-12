@@ -14,7 +14,25 @@ const items = [
   },
   {
     q: "Can I import my history from another app?",
-    a: "You can import your existing history from TV Time, so you start exactly where you left off.",
+    a: (
+      <>
+        <p>You can import your existing history from TV Time, so you start exactly where you left off.</p>
+        <br />
+        1 - Open Google Chrome and go to the Chrome Web Store, there search for "TV Time Liberator": click "Add to
+        Chrome". Once installed, click the puzzle piece icon (Extensions menu) in your browser toolbar and pin "TV Time
+        Liberator" for easy access.
+        <br />2 - Go to TV Time official website:{" "}
+        <a className="faq-link" href="https://www.tvtime.com/it" target="_blank">
+          https://www.tvtime.com
+        </a>{" "}
+        and login with your credentials.
+        <br />3 - Click on the "TV Time Liberator" icon in your browser toolbar and click the button "Liberate". Wait
+        until the process is completed and save the generated .zip file on your PC.
+        <br />4 - Extract the .zip file and delete everything but the "activity_history.csv" file.
+        <br />5 - Open Showdex, go to Profile {"->"} Settings {"->"} Import from TVTime: select the .csv file you just
+        extracted and the job is done! Your history is now synced with Showdex.
+      </>
+    ),
   },
   {
     q: "Will I get notified about new episodes?",
