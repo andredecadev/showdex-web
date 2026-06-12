@@ -25,6 +25,17 @@
   }
 }
 
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: right;
+
+  @media (max-width: 920px) {
+    text-align: left;
+  }
+}
+
 .footer-brand {
   display: flex;
   align-items: center;
