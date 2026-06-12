@@ -90,7 +90,7 @@ const FeaturesWidget = () => (
           icon={<TrendingUp size={23} />}
           eyebrow="Statistics"
           title="Your year in review, all year long."
-          body="Days watched, streaks, a heatmap of your habits. Showdex turns your watch history into stats you'll actually want to share."
+          body="Days watched, streaks, a heatmap of your habits and more. Showdex turns your watch history into stats you'll actually want to share."
           points={[
             "Activity heatmap & streaks",
             "Episodes per month and totals",

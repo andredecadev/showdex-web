@@ -6,12 +6,15 @@ const shots = [
   { src: "/screens/calendar.png", label: "Calendar" },
   { src: "/screens/discover.png", label: "Discover" },
   { src: "/screens/trending.png", label: "Trending" },
+  { src: "/screens/popular.png", label: "Popular" },
   { src: "/screens/library.png", label: "Your library" },
   { src: "/screens/series.png", label: "Your series" },
   { src: "/screens/activity.png", label: "Your activity" },
+  { src: "/screens/list.png", label: "Custom lists" },
   { src: "/screens/movie.png", label: "Movie details" },
   { src: "/screens/show.png", label: "Series details" },
   { src: "/screens/episode.png", label: "Episode details" },
+  { src: "/screens/cast.png", label: "Cast details" },
 ];
 
 const GalleryWidget = () => (
